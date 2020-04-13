@@ -26,7 +26,7 @@ animations {
   flip_vertical: 0
 }
 animations {
-  id: "Right"
+  id: "right"
   images {
     image: "/assets/astronaut/right_01.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
@@ -57,7 +57,7 @@ animations {
   flip_vertical: 0
 }
 animations {
-  id: "Left"
+  id: "left"
   images {
     image: "/assets/astronaut/left_01.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
@@ -88,7 +88,7 @@ animations {
   flip_vertical: 0
 }
 animations {
-  id: "Front"
+  id: "front"
   images {
     image: "/assets/astronaut/front_01.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
@@ -119,7 +119,7 @@ animations {
   flip_vertical: 0
 }
 animations {
-  id: "Back"
+  id: "back"
   images {
     image: "/assets/astronaut/back_01.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
