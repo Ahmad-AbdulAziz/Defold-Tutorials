@@ -15,11 +15,10 @@ function update(self, dt)
 	local v0 = self.velocity                    -- [4]
 	local v1 = self.velocity + dv               -- [5]
 	local movement = (v0 + v1) * dt * 0.5       -- [6]
-	print(movement)
 	local p = go.get_position()
 	go.set_position(p + movement)               -- [7]
+	self.velocity = v1
 
-	self.velocity = v1                          -- [8]
 	self.input = vmath.vector3()
 end
 
