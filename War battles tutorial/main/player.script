@@ -1,6 +1,9 @@
 function init(self)
 	msg.post(".", "acquire_input_focus")
+
 	self.moving = false
+	self.firing = false
+	
 	self.input = vmath.vector3()
 	self.dir = vmath.vector3(0, 1, 0)
 	self.speed = 50
@@ -17,6 +20,11 @@ function update(self, dt)
 		go.set_position(pos)
 	end
 
+	if self.firing then
+		factory.create("#rocketfactory")
+	end
+	
+	self.firing = false 
 	self.input.x = 0
 	self.input.y = 0
 	self.moving = false
@@ -36,6 +44,8 @@ function on_input(self, action_id, action)
 		self.input.x = -1
 	elseif action_id == hash("right") then
 		self.input.x = 1
+	elseif action_id == hash("fire") and action.pressed then
+		self.firing = true
 	end
 
 	if vmath.length(self.input) > 0 then
