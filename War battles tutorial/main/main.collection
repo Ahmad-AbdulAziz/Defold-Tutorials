@@ -1,4 +1,84 @@
 name: "main"
+instances {
+  id: "tank"
+  prototype: "/main/tank.go"
+  position {
+    x: 628.0
+    y: 167.0
+    z: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 3.105
+    y: 3.405
+    z: 1.0
+  }
+}
+instances {
+  id: "tank1"
+  prototype: "/main/tank.go"
+  position {
+    x: 737.0
+    y: 160.0
+    z: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 3.105
+    y: 3.405
+    z: 1.0
+  }
+}
+instances {
+  id: "tank2"
+  prototype: "/main/tank.go"
+  position {
+    x: 604.0
+    y: 354.0
+    z: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 3.105
+    y: 3.405
+    z: 1.0
+  }
+}
+instances {
+  id: "tank3"
+  prototype: "/main/tank.go"
+  position {
+    x: 191.0
+    y: 271.0
+    z: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 3.105
+    y: 3.405
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "map"
@@ -19,8 +99,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: -464.0
-    y: -182.0
+    x: -481.0
+    y: -194.0
     z: 0.0
   }
   rotation {

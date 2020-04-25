@@ -23,8 +23,8 @@ function update(self, dt)
 	if self.firing then
 		local angle = math.atan2(-self.dir.y, -self.dir.x)
 		local rot = vmath.quat_rotation_z(angle)
-		print(angle)
-		print(rot)
+		-- print(angle)
+		-- print(rot)
 		local props = { dir = self.dir }
 		factory.create("#rocketfactory", nil, rot, props)
 
