@@ -3,7 +3,7 @@ instances {
   id: "factory"
   prototype: "/stars/factory.go"
   position {
-    x: 1312.0
+    x: 1246.0
     y: 360.0
     z: 0.5
   }
