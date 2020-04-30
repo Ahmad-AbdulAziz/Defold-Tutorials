@@ -10,10 +10,18 @@ function update(self, dt)
 	end
 	local acceleration = self.input * 200
 	local dv = acceleration * dt 
+	
+	if vmath.length(self.velocity) < 50 then
+		print('acceleration')
+	elseif vmath.length(self.velocity) >= 50 then
+		dv = vmath.vector3()
+		print('const')
+	end
+	print(dv)
+
 	local v0 = self.velocity
 	local v1 = v0 + dv
 	local movment = (v0 + v1 ) * 0.5 * dt
-
 	local p = go.get_position()
 	-- print(movment)
 	go.set_position(p + movment)
